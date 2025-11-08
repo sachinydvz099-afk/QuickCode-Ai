@@ -1,0 +1,39 @@
+{
+  "name": "vibe-coding-platform-backend",
+  "version": "1.0.0",
+  "description": "Backend server for collaborative coding platform",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "test": "jest",
+    "init-db": "ts-node src/scripts/init-db.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.8.7",
+    "openai": "^6.8.1",
+    "socket.io": "^4.6.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.3"
+  }
+}
