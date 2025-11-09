@@ -38,5 +38,18 @@
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.3"
+  },
+  "nixpacks": {
+    "phases": {
+      "install": {
+        "cmds": ["npm install"]
+      },
+      "build": {
+        "cmds": ["npm run build"]
+      }
+    },
+    "start": {
+      "cmd": "node dist/server.js"
+    }
   }
 }
