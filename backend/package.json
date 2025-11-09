@@ -8,8 +8,10 @@
     "dev": "nodemon src/server.ts",
     "build": "tsc",
     "test": "jest",
-    "init-db": "ts-node src/scripts/init-db.ts",
-    "postinstall": "npm run build"
+    "init-db": "ts-node src/scripts/init-db.ts"
+  },
+  "engines": {
+    "node": ">=18.x"
   },
   "author": "",
   "license": "ISC",
